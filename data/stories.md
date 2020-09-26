@@ -71,14 +71,20 @@
 * ask_refreshments
     - utter_ask_refreshments
 
-## happy path
+## request tea
 * request_tea
     - tea_form
     - form{"name": "tea_form"}
     - form{"name": null}
 
-## happy path
+## request refreshments
 * request_refreshments
     - refreshments_form
     - form{"name": "refreshments_form"}
+    - form{"name": null}
+
+## request constellation
+* request_constellation
+    - constellation_form
+    - form{"name": "constellation_form"}
     - form{"name": null}

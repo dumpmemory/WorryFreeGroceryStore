@@ -145,6 +145,15 @@
 - [肠粉](refreshments)
 - [糕点](refreshments)
 
-
+## intent: request_constellation
+- 查星座
+- 帮我查一下[巨蟹座](constellation)吧
+- 帮我查一下[白羊座](constellation)呀
+- 能不能和我说一下[双子座](constellation)
+- 你知不知道[摩羯座](constellation)的女生这么样
+- 可以和我说一下[巨蟹座](constellation)的男生么
+- [天蝎座](constellation)
+- [水瓶座](constellation)的介绍
+- 介绍一下[金牛座](constellation)
 
 
