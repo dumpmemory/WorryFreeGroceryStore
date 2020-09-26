@@ -1,0 +1,76 @@
+intents:
+  - affirm
+  - deny
+  - greet
+  - goodbye
+  - thanks
+  - whoareyou
+  - whattodo
+  - ask_tea
+  - ask_refreshments
+  - request_tea
+  - request_refreshments
+
+slots:
+  date-time:
+    type: unfeaturized
+  address:
+    type: unfeaturized
+
+entities:
+  - date-time
+  - address
+
+actions:
+  - utter_answer_affirm
+  - utter_answer_deny
+  - utter_answer_greet
+  - utter_answer_goodbye
+  - utter_answer_thanks
+  - utter_answer_whoareyou
+  - utter_answer_whattodo
+  - utter_ask_refreshments
+  - utter_ask_tea
+  - action_default_fallback
+
+responses:
+  utter_answer_affirm:
+    - text: "嗯嗯，好的！"
+    - text: "嗯嗯，很开心能够帮您解决问题~"
+    - text: "嗯嗯，还需要什么我能够帮助您的呢？"
+
+  utter_answer_greet:
+    - text: "您好！请问我可以帮到您吗？"
+    - text: "您好！很高兴为您服务。请说出您要查询的功能？"
+
+  utter_answer_goodbye:
+    - text: "再见"
+    - text: "拜拜"
+    - text: "虽然我有万般舍不得，但是天下没有不散的宴席~祝您安好！"
+    - text: "期待下次再见！"
+    - text: "嗯嗯，下次需要时随时记得我哟~"
+    - text: "see you!"
+
+  utter_answer_deny:
+    - text: "主人，您不开心吗？不要离开我哦"
+    - text: "怎么了，主人？"
+
+  utter_answer_thanks:
+    - text: "嗯呢。不用客气~"
+    - text: "这是我应该做的，主人~"
+    - text: "嗯嗯，合作愉快！"
+
+  utter_answer_whoareyou:
+    - text: "您好！我是小夕呀，您的莫茶AI智能小助理"
+
+  utter_answer_whattodo:
+    - text: "您好！很高兴为您服务，我目前只支持点餐哦。"
+
+  utter_ask_tea:
+    - text: "您好！很高兴为您服务，我们这边目前茶可多了！有红茶、绿茶、普洱茶、铁观音、碧螺春、还有上好的龙井，请问你要哪一种呢？"
+
+  utter_ask_refreshments:
+    - text: "您好！很高兴为您服务，我们这边目前茶点可多了！有蛋糕、肠粉、还有好吃停不下来的糕点，请问你要哪一种呢？"
+
+  utter_default:
+    - text: "没听懂，请换种说法吧~"

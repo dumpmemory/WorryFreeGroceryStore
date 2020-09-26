@@ -1,0 +1,17 @@
+# 指定action server的url
+# 当然，也可以将action server单独实现在一个web server项目中
+# 那么这个url为"https://yourWebIp:yourWebPort/webhook“
+action_endpoint:
+ url: "http://localhost:5055/webhook"
+ 
+# 配置nlu(单独创建一个web项目):
+#  url: "http://10.0.0.153:5000/"
+
+# 配置tracker信息存储服务器
+#tracker_store:
+#    type: mongod
+#    url: mongodb://localhost:27017
+#    db: rasa
+#    username:
+#    password:
+#    auth_source: rasa
