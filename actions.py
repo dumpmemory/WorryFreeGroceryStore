@@ -37,6 +37,32 @@ class TeaForm(FormAction):
         sugar = tracker.get_slot('sugar')
         dispatcher.utter_message("{}{}的{} 马上为您送上".format(temperature,sugar,tea))
         return [Restarted()]
+
+# action tea_form
+class TakewayForm(FormAction):
+    def name(self) -> Text:
+        """Unique identifier of the form"""
+        return "takeway_form"
+
+    @staticmethod
+    def required_slots(tracker: Tracker) -> List[Text]:
+        """A list of required slots that the form has to fill"""
+        return ["refreshments", "tea", "address","phone_number"]
+
+    def submit(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict]:
+        """Define what the form has to do
+            after all required slots are filled"""
+        tea = tracker.get_slot('tea')
+        refreshments = tracker.get_slot('refreshments')
+        address = tracker.get_slot('address')
+        phone_number = tracker.get_slot('phone_number')
+        dispatcher.utter_message("{}和{}已经在制作中，麻烦十分钟后到{}拿，并保证手机号{}畅通".format(refreshments,tea,address,phone_number))
+        return []
             
 # action tea_form
 class RefreshmentsForm(FormAction):

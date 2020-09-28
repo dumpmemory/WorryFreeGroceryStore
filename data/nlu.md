@@ -114,6 +114,13 @@
 - 这里比较热门的是什么小吃？
 - 小吃推荐
 
+## intent: ask_address
+- 请问送货地址在哪里呢？
+- 麻烦，留个收货地址！
+
+## intent: ask_phone_number
+- 需要手机号么？
+
 ## intent: request_tea
 - 点[茶](tea)
 - 喝[茶](tea)
@@ -133,7 +140,6 @@
 - [碧螺春](tea)
 - [绿茶](tea)
 - [龙井](tea)
-
 
 ## intent: request_refreshments
 - 点餐
@@ -155,5 +161,21 @@
 - [天蝎座](constellation)
 - [水瓶座](constellation)的介绍
 - 介绍一下[金牛座](constellation)
+
+## intent: request_takeway
+- 点外卖
+- 点份外卖
+- 送份[蛋糕](refreshments)到[南山区阿里中心](address)
+- 我要点外卖
+- 点一份[肠粉](refreshments)，一杯[茉莉花茶](tea)，送到[南山区阿里中心](address)，电话号码为[13025240602](phone_number)
+- 来一份[蛋糕](refreshments)和[肠粉](refreshments)，一杯[碧螺春](tea)，电话号码为[13025240602](phone_number)
+- 麻烦送一份[蛋糕](refreshments)到[南山区](address)
+
+<!--Regular Expression Features-->
+## regex:phone_number
+- ((\d{3,4}-)?\d{7,8})|(((\+86)|(86))?(1)\d{10})
+
+## lookup: constellation
+- data/lookup_tables/constellation.txt
 
 

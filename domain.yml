@@ -8,9 +8,12 @@ intents:
   - whattodo
   - ask_tea
   - ask_refreshments
+  - ask_phone_number
+  - ask_address
   - request_tea
   - request_refreshments
   - request_constellation
+  - request_takeway
 
 slots:
   tea:
@@ -23,13 +26,19 @@ slots:
     type: unfeaturized
   constellation:
     type: unfeaturized
-
+  phone_number:
+    type: unfeaturized
+  address:
+    type: unfeaturized
+  
 entities:
   - tea
   - temperature
   - sugar
   - refreshments
   - constellation
+  - phone_number
+  - address
 
 actions:
   - utter_answer_affirm
@@ -41,6 +50,8 @@ actions:
   - utter_answer_whattodo
   - utter_ask_refreshments
   - utter_ask_tea
+  - utter_ask_phone_number
+  - utter_ask_address
   - utter_ask_constellation
   - action_default_fallback
 
@@ -48,6 +59,7 @@ forms:
   - tea_form
   - refreshments_form
   - constellation_form
+  - takeway_form
 
 responses:
   utter_answer_affirm:
@@ -93,6 +105,16 @@ responses:
 
   utter_ask_sugar:
     - text: "请问，你要加糖么？"
+    
+  utter_ask_phone_number:
+    - text: "客官，请问您手机号码多少呀？"
+    - text: "麻烦给我手机号呗！"
+    - text: "麻烦给我一个联系方式"
+    - text: "能否提供一下您的联系方式呢？"
+
+  utter_ask_address:
+    - text: "麻烦留个收货地址"
+    - text: "请问，你在哪里呢？"
 
   utter_default:
     - text: "没听懂，请换种说法吧~"

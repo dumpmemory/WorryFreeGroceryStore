@@ -7,7 +7,7 @@ dictPath = "data/dict/"
 dictName = "constellation"
 
 constellationDict = loadDict(dictPath,dictName)
-print(f"constellationDict:{constellationDict}")
+# print(f"constellationDict:{constellationDict}")
 # constellation = "白羊座"
 # mess = "来自遥远的星星你，是否也会怀念回家的路？"
 # if constellation in constellationDict:
