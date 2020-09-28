@@ -84,7 +84,7 @@
 
 ## intent: request_takeway
 - 点份外卖
-- 点一份[肠粉](refreshments)，一杯[茉莉花茶](tea)，送到[南山区阿里中心](address)，电话号码为[13025240602](phone_number)
+- 点一份[肠粉](refreshments)，一杯[茉莉花茶](tea)，送到[南山区](address)，电话号码为[13025240602](phone_number)
 - 麻烦送一份[蛋糕](refreshments)到[南山区](address)
 - ...
 ```
