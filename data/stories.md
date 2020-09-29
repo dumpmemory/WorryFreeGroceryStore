@@ -63,6 +63,10 @@
 * whattodo
     - utter_answer_whattodo
 
+## say joke
+* ask_joke
+    - utter_ask_joke
+
 ## ask tea
 * ask_tea
     - utter_ask_tea

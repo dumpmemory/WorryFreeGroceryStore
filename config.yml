@@ -12,7 +12,7 @@ pipeline:
 
 policies:
   - name: KerasPolicy
-    epochs: 500
+    epochs: 100
     max_history: 5
   - name: FallbackPolicy
     fallback_action_name: 'action_default_fallback'
