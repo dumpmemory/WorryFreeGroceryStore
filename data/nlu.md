@@ -1,3 +1,41 @@
+## intent:request_search
+- 帮我查一下我的[流量](item)有多少
+- 帮我查一下我一个月[消费](item)多少
+- 帮我查一下我[月租](item)多少
+- 我想问一下我是用了多少[话费](item)
+- 我现在还有多少话费[余额](item)啊
+- 你好查下我这个[流量](item)有多少啊
+- 我想看一下[话费](item)
+- 能不能看下我还剩多少[钱](item)
+- 我想知道我的这个月的[话费](item)嗯嗯
+- 帮我看一下我[上个月](time)[消费](item)多少
+- 帮我查一下我[这个月](time)[消费](item)多少
+- 喂你好你帮我查看一下这个[本月](time)我的[流量](item)
+- 帮我查一下我[十二月](time)的[流量](item)有多少
+- 帮我查一下我[三月](time)的[消费](item)有多少
+- [三月份](time)
+- [一月份](time)
+- 是[十一月](time)的
+- [二月](time)的
+- 请帮我查一下[18810397783](phone_number)的[话费](item)
+- 查下我[三月份](time)的用了多少[钱](item)
+- [话费](item)
+- [流量](item)
+- [流量](item)查询
+- 查询[流量](item)
+- [话费](item)查询
+- 查询[话费](item)
+- [消费](item)查询
+- [消费](item)
+- 查询[消费](item)
+- [电话费](item)查询
+- [电话费](item)
+- 查询[电话费](item)
+- [余额](item)查询
+- [余额](item)
+- 查询[余额](item)
+
+
 ## intent:ask_joke
 - 不开心
 - 我需要安慰
@@ -84,6 +122,12 @@
 
 ## lookup:constellation
 - data/lookup_tables/constellation.txt
+
+<!--synonyms-->
+## synonym:消费
+  - 余额
+  - 话费
+  - 电话费
 
 ## intent:greet
 - 你好

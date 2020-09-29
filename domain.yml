@@ -14,7 +14,9 @@ intents:
   - request_tea
   - request_refreshments
   - request_constellation
+  - request_search
   - request_takeway
+  - inform_time
 
 slots:
   tea:
@@ -31,6 +33,10 @@ slots:
     type: unfeaturized
   address:
     type: unfeaturized
+  item:
+    type: text
+  time:
+    type: text
   
 entities:
   - tea
@@ -40,6 +46,8 @@ entities:
   - constellation
   - phone_number
   - address
+  - item
+  - time
 
 actions:
   - utter_answer_affirm
@@ -55,6 +63,7 @@ actions:
   - utter_ask_phone_number
   - utter_ask_address
   - utter_ask_constellation
+  - action_search_consume
   - action_default_fallback
 
 forms:
@@ -255,3 +264,11 @@ responses:
   
   utter_ask_constellation:
     - text: "小星卜小夕来啦？你想查询什么星座？白羊座？金牛座？双子座？巨蟹座？狮子座？处女座？天秤座？天蝎座？射手座？摩羯座？水瓶座？"
+  
+  utter_ask_morehelp:
+    - text: "还有什么能帮您吗"
+    - text: "您还想干什么"
+
+  utter_ask_time:
+    - text: "你想查哪个时间段的"
+    - text: "你想查几月份的"
